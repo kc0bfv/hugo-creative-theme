@@ -1,5 +1,5 @@
 {{ "<!-- ACKNOWLEDGE -->" | safeHTML }}
-<section id="acknowledge">
+<footer id="acknowledge">
     <div class="container">
         {{ with .Site.Params.acknowledgements.headline }}
         <div class="row">
@@ -11,10 +11,10 @@
         {{ end }}
         <div class="row">
             {{ range .Site.Params.acknowledgements.list }}
-            <div class="col-lg-4 col-md-6 text-center panel-body">
+            <div class="col-lg-4 col-md-6 text-center">
                 <a class="text-muted" href="{{ .link }}">{{ .text }}</a>
             </div>
             {{ end }}
         </div>
     </div>
-</section>
+</footer>
