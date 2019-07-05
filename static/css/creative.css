@@ -274,6 +274,11 @@ header .header-content .header-content-inner p {
     max-width: 650px;
 }
 
+.portfolio-box.show-text .portfolio-box-caption {
+    opacity: 1;
+    background: rgba(240,95,64,0);
+}
+
 .portfolio-box .portfolio-box-caption {
     display: block;
     position: absolute;
@@ -287,6 +292,16 @@ header .header-content .header-content-inner p {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+}
+
+.portfolio-box.show-text .portfolio-box-caption .portfolio-box-caption-content {
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+    border-radius: 5px;
+    background: rgba(240,95,64,.9);
+    width: auto;
+    transform: none;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {

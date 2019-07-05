@@ -78,12 +78,19 @@ googleAnalytics = ""
             description = "You have to make your websites with love these days!"
 
 
-    # Portfolio modals
-	[params.portfolio.modal]
-        client = "Client"
-        date = "Date"
-        category = "Category"
-        buttonText = "Close"
+    # Portfolio section
+    [params.portfolio]
+        # Set this to show the descriptive text over the
+        # portfolio images at all times, instead of just on hover
+        # Useful for mobile, when the text is important
+        show_text_always = false
+
+        # Portfolio modals
+        [params.portfolio.modal]
+            client = "Client"
+            date = "Date"
+            category = "Category"
+            buttonText = "Close"
 
     # Aside section
 	[params.aside]
