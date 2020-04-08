@@ -44,6 +44,10 @@
             {{ partial "modals.html" . }}
         {{ end }}
 
+        {{ if .Site.Data.about_her }}
+            {{ partial "about_her.html" . }}
+        {{ end }}
+
         {{ partial "js.html" . }}
 
         {{ template "_internal/google_analytics.html" . }}
